@@ -1,6 +1,21 @@
 
 
 function frameYourPhrase(phrase) {
+   var arr = phrase.split(" ");
+   var stars = "*****";
+   if(arr[0].length < arr[1].length){
+      for(var i = 0; i < arr[1].length; i++){
+        stars+="*";
+      }
+    }
+    else if (arr[0].length > arr[1].length){
+      for(var i = 0; i < arr[0].length; i++){
+        stars+="*";
+      }
+
+   }
+ return(stars + " \n " + arr[0] + " *\n* " + arr[1] + " \n " + stars);
+ }
    /*
      TODO: Write a function that takes a string like "Hello World!" and
      returns the string as a framed phrase like:
