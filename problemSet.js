@@ -33,6 +33,7 @@ function frameYourPhrase(phrase) {
 function isPrime(num) {
     
     if (num === 1 || num === 3 || num === 5 || num === 7 || num === 11 || num === 13 || num === 17) {
+
       return true;
     } else {
     return false;
